@@ -1,0 +1,38 @@
+{
+  "name": "vite-plugin-aliases3",
+  "version": "0.0.2",
+  "description": "a vite plugin",
+  "module": "./dist/index.mjs",
+  "main": "./dist/index.cjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "unbuild --stub",
+    "build": "unbuild --minify"
+  },
+  "keywords": [
+    "vite",
+    "alias",
+    "aliases",
+    "plugin",
+    "vite-plugin"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "unbuild": "^2.0.0"
+  }
+}
